@@ -1,0 +1,16 @@
+<resources>
+    <!-- detail -->
+    <dimen name="detail_title_text_size">32sp</dimen>
+    <dimen name="detail_body_text_size">18sp</dimen>
+    <item name="detail_body_line_spacing_multiplier" format="float" type="fraction">1.15</item>
+
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_press_translation_z">12dp</dimen>
+    <dimen name="fab_borderWidth">0dp</dimen>
+
+    <dimen name="bar_initialheight">112dp</dimen>
+    <dimen name="left_keyline">16dp</dimen>
+    <dimen name="item_separation">4dp</dimen>
+
+</resources>

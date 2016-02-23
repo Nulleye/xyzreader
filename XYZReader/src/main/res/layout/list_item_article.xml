@@ -1,0 +1,91 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/item_separation"
+    android:layout_marginStart="@dimen/item_separation"
+    android:layout_marginRight="@dimen/item_separation"
+    android:layout_marginEnd="@dimen/item_separation"
+    android:layout_marginTop="@dimen/item_separation"
+    android:layout_marginBottom="@dimen/item_separation"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardPreventCornerOverlap="false"
+    app:cardElevation="4dp"
+    android:transitionName="@string/transition_card"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--suppress AndroidLintContentDescription  -->
+        <com.example.xyzreader.ui.DynamicHeightNetworkImageView
+            android:id="@+id/article_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/photo_placeholder"
+            android:transitionName="@string/transition_photo"
+            />
+
+        <TextView
+            android:id="@+id/article_title"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:paddingRight="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/theme_text_color_alt"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:layout_gravity="start"
+            android:transitionName="@string/transition_title"
+            />
+
+        <TextView
+            android:id="@+id/article_author"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:paddingRight="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="4dp"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:layout_gravity="start"
+            android:transitionName="@string/transition_author"
+            />
+
+        <TextView
+            android:id="@+id/article_date"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:paddingRight="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/theme_text_color_alt"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAlignment="viewEnd"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:transitionName="@string/transition_date"
+            />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

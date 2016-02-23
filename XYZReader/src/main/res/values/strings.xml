@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">XYZ Reader</string>
+    <string name="welcome_xyz_reader">Welcome to XYZ Reader!</string>
+
+    <string name="action_refresh">Refresh</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
+
+    <string name="up">Up</string>
+
+    <string name="by_author">by %1$s</string>
+
+    <string name="swipe_message">Swipe right or left to move between articles.</string>
+    <string name="dismiss">Dismiss</string>
+
+
+    <string name="transition_card">transition_card</string>
+    <string name="transition_photo">transition_photo</string>
+    <string name="transition_title">transition_title</string>
+    <string name="transition_author">transition_author</string>
+    <string name="transition_date">transition_date</string>
+
+</resources>
