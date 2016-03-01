@@ -178,27 +178,27 @@ public class MyTextView extends TextView implements Animator.AnimatorListener, V
             int currentPadding = ViewCompat.getPaddingStart(this);
 
             if (currentPadding != newPadding) {
-                int delta = (newPadding - currentPadding) / 3;
-                //If we have delta and we are on the current page -> animate change
-                if ((delta != 0) && (pageHolderLocation[0] == 0) ) {
-                    if (mAnimator == null) {
-                        mAnimator = ValueAnimator.ofInt(currentPadding, currentPadding + delta, currentPadding + (2*delta), newPadding);
-                        mAnimator.setTarget(this);
-                        mAnimator.addListener(this);
-                        mAnimator.addUpdateListener(this);
-                        mAnimator.setDuration(200);
-                        mAnimator.start();
-                        doTextLog("checkCollision: new animation " + currentPadding + "/" + (currentPadding + delta) + "/" + (currentPadding + (2 * delta)) + "/" + newPadding);
-                    } else {
-                        //Animator is already running -> update values
-                        mAnimator.setIntValues(currentPadding, currentPadding + delta, currentPadding + (2*delta), newPadding);
-                        doTextLog("checkCollision: update naimation " + currentPadding + "/" + (currentPadding + delta) + "/" + (currentPadding + (2 * delta)) + "/" + newPadding);
-                    }
-                } else {
+//                int delta = (newPadding - currentPadding) / 3;
+//                //If we have delta and we are on the current page -> animate change
+//                if ((delta != 0) && (pageHolderLocation[0] == 0) ) {
+//                    if (mAnimator == null) {
+//                        mAnimator = ValueAnimator.ofInt(currentPadding, currentPadding + delta, currentPadding + (2*delta), newPadding);
+//                        mAnimator.setTarget(this);
+//                        mAnimator.addListener(this);
+//                        mAnimator.addUpdateListener(this);
+//                        mAnimator.setDuration(200);
+//                        mAnimator.start();
+//                        doTextLog("checkCollision: new animation " + currentPadding + "/" + (currentPadding + delta) + "/" + (currentPadding + (2 * delta)) + "/" + newPadding);
+//                    } else {
+//                        //Animator is already running -> update values
+//                        mAnimator.setIntValues(currentPadding, currentPadding + delta, currentPadding + (2*delta), newPadding);
+//                        doTextLog("checkCollision: update naimation " + currentPadding + "/" + (currentPadding + delta) + "/" + (currentPadding + (2 * delta)) + "/" + newPadding);
+//                    }
+//                } else {
                     setPadding(newPadding);
                     doTextLog("checkCollision: setPadding " + newPadding);
-                }
-                return true;
+//                }
+//                return true;
             }
         } //if (dist>0)
         doTextLog("checkCollision: skip");
